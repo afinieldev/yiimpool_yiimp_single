@@ -40,7 +40,7 @@ source menu.sh
 source questions.sh
 source $HOME/yiimpool/yiimp_single/.wireguard.install.cnf
 if [[ ("$wireguard" == "true") ]]; then
-  source wireguard.sh
+source wireguard.sh
 fi
 source system.sh
 source self_ssl.sh
@@ -60,7 +60,7 @@ source $STORAGE_ROOT/yiimp/.yiimp.conf
 clear
 
 if [[ ("$UsingDomain" == "yes") ]]; then
-  echo -e "Installation of your Yiimpool Yiimp v2.0 is now completed."
+  echo -e "$GREEN Installation of your Yiimp server is now completed."
   echo -e "You $RED*MUST REBOOT*$COL_RESET the machine to finalize the machine updates and folder permissions! $MAGENTA YiiMP will not function until a reboot is performed!$COL_RESET"
   echo
   echo -e "$YELLOW Important!$COL_RESET After first reboot it may take up to 1 minute for the main|loop2|blocks|debug screens to start!"
@@ -71,7 +71,7 @@ if [[ ("$UsingDomain" == "yes") ]]; then
   echo -e "$RED By default all stratum ports are blocked by the firewall.$COL_RESET To allow a port through, from the command prompt type $GREEN sudo ufw allow port number.$COL_RESET"
   echo "Database user names and passwords can be found in $STORAGE_ROOT/yiimp_setup/.my.cnf"
 else
-  echo -e "Installation of your Yiimpool Yiimp v2.0 is now completed."
+  echo -e "Installation of your Yiimp server is now completed."
   echo -e "You $RED*MUST REBOOT*$COL_RESET the machine to finalize the machine updates and folder permissions! $MAGENTA YiiMP will not function until a reboot is performed!$COL_RESET"
   echo
   echo -e "$YELLOW Important!$COL_RESET After first reboot it may take up to 1 minute for the main|loop2|blocks|debug screens to start!"
@@ -85,10 +85,9 @@ else
 fi
 
 echo
-echo -e "$YELLOW Happy mining $COL_RESET"
 echo "----------------------------------------------------------------------------"
 echo
-echo -e "$GREEN Thank you for using Afiniel Yiimpool Installer v2.0!$COL_RESET"
+echo -e "$GREEN Thank you for using Afiniel Yiimpool Installer v3.0!$COL_RESET"
 echo
 echo -e "$YELLOW To run this installer anytime simply type, $GREEN yiimpool $COL_RESET"
 echo -e "$YELLOW If you want to support by donate, use wallet below $COL_RESET"
